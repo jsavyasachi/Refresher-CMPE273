@@ -1,0 +1,9 @@
+{
+  "name": "refresher-cmpe273",
+  "version": "1.0.0",
+  "description": "Review of basic Web Technologies",
+  "main": "JS_1.js",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
