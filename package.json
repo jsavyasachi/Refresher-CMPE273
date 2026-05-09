@@ -4,6 +4,6 @@
   "description": "Review of basic Web Technologies",
   "main": "JS_1.js",
   "dependencies": {
-    "node-fetch": "^2.7.0"
+    "node-fetch": "^3.3.2"
   }
 }
