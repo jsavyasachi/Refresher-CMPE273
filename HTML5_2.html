@@ -38,13 +38,13 @@
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition);
             } else {
-                x.innerHTML = "Geolocation is not supported by this browser.";
+                x.textContent = "Geolocation is not supported by this browser.";
             }
             function showPosition(position) {
-                x.href = "https://www.latlong.net/c/?lat=" + position.coords.latitude + "&long="
+                var url = "https://www.latlong.net/c/?lat=" + position.coords.latitude + "&long="
                     + position.coords.longitude;
-                x.innerHTML = "https://www.latlong.net/c/?lat=" + position.coords.latitude + "&long="
-                    + position.coords.longitude;
+                x.href = url;
+                x.textContent = url;
             }
         }
     </script>

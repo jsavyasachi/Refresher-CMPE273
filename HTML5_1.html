@@ -111,13 +111,13 @@
             localStorage.password = document.getElementById("password").value;
         }
         function showData() {
-            document.getElementById("displayFirstName").innerHTML = localStorage.firstName;
-            document.getElementById("displayLastName").innerHTML = localStorage.lastName;
-            document.getElementById("displayBirthday").innerHTML = localStorage.bday;
-            document.getElementById("displayGender").innerHTML = localStorage.gender;
-            document.getElementById("displayEmail").innerHTML = localStorage.emailAddress;
-            document.getElementById("displayPhone").innerHTML = localStorage.phone;
-            document.getElementById("displayPassword").innerHTML = localStorage.password;
+            document.getElementById("displayFirstName").textContent = localStorage.firstName;
+            document.getElementById("displayLastName").textContent = localStorage.lastName;
+            document.getElementById("displayBirthday").textContent = localStorage.bday;
+            document.getElementById("displayGender").textContent = localStorage.gender;
+            document.getElementById("displayEmail").textContent = localStorage.emailAddress;
+            document.getElementById("displayPhone").textContent = localStorage.phone;
+            document.getElementById("displayPassword").textContent = localStorage.password ? "********" : "";
         }
     </script>
 </body>
